@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      
+import Routes from './Routes'
+
+export default props =>
+  <BrowserRouter>
+    <div className="app">
+      <Routes />
     </div>
-  );
-}
-
-export default App;
+  </BrowserRouter>
