@@ -1,12 +1,16 @@
 import React from 'react'
-import { Switch, Route } from 'react-router'
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
 
 import MainPage from './Containers/Pages/MainPage/index'
 
 const Routes = props => {
-    return (<Switch>
-        <Route exact path='/' component={MainPage} />
-    </Switch>)
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={MainPage} />
+            </Switch>
+        </BrowserRouter>
+    )
 }
 
 export default Routes
